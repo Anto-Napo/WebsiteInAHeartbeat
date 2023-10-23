@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="pictures/icon.webp">
+    <link rel="stylesheet" href="style.css">
+    <title>In a heartbeat</title>
+  </head>
+  <body>
+    <div id="header" class="header">
+      <img onclick="goToSection('header')" class="logo" src="pictures/logo.png">
+      <p onclick="goToSection('news')" class="header-element">Actualités</p>
+      <p onclick="goToSection('social')" class="header-element">Réseaux sociaux</p>
+      <p onclick="goToSection('contact')" class="header-element">Contact</p>
+    </div>
+
+    <div id="news" class="container">
+      <div class="title-container">
+        <p class="title">ACTUALITÉS</p>
+      </div>
+      <div class="news-container">
+        <div class="news-left-container">
+          <p class="news-text">Nous avons commencé à travailler sur le projet de <i>In a heartbeat</i>, un projet original créé par un groupe d'amis sur Unity. Nous en sommes au début en créant le site web et en commencant le développement.</p>
+        </div>
+        <div class="news-right-container">
+          <img class="news-picture" src="pictures/unity.webp">
+        </div>
+      </div>
+    </div>
+
+    <div id="social" class="container">
+      <div class="title-container">
+        <p class="title">RÉSEAUX SOCIAUX</p>
+      </div>
+      <div class=" social-container">  
+        <img onclick="socialClick('discord')" class="social-discord-picture" src="pictures/discordlogo.png">
+        <img onclick="socialClick('twitter')" class="social-discord-picture" src="pictures/twitterlogo.png">
+        <img onclick="socialClick('github')" class="social-github-picture" src="pictures/githublogo.png">
+      </div>
+    </div>
+
+    <div id="contact" class="container">
+      <div class="title-container">
+        <p class="title">CONTACT</p>
+      </div>
+      <div class="social-container contact-container">  
+        <img onclick="contactClick('gmail')" class="social-discord-picture" src="pictures/gmaillogo.png">
+        <img onclick="contactClick('forms')" class="social-discord-picture" src="pictures/formslogo.png">
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
